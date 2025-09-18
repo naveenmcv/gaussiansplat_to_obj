@@ -1,0 +1,1 @@
+# gaussiansplat_to_obj
