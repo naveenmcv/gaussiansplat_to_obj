@@ -1,0 +1,522 @@
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ cd
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ cd C:\Users\neula\Downloads\ply
+bash: cd: C:UsersneulaDownloadsply: No such file or directory
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ ls
+ -1.14-windows.xml
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Autodesk/
+'Calibre Library'/
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{2a9b9dcd-496c-11ee-938a-97d4f3b76dae}.TM.blf
+ NTUSER.DAT{2a9b9dcd-496c-11ee-938a-97d4f3b76dae}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{2a9b9dcd-496c-11ee-938a-97d4f3b76dae}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ THreeJS/
+ Templates@
+'UNITY Projects_NMC'/
+ Videos/
+ blenderkit_data/
+ conda
+ get-pip.py*
+ jupyter
+ kit-sdk-windows-107.3.0.zip
+ kkk.jpg
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ python-3.9.13-amd64.exe*
+ source/
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ cd Downloads
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads
+$ ls
+'0 Resume june 2025'/
+ 1/
+ 2/
+'2 Pushpak Relieving Letter_update.jpg'
+'3D Generalist NAVEEN MADHAVAN Resume 2025.pdf'
+ 3dgs-render-blender-addon-main.zip
+'Applied Generative AI for Beginners Practical Knowledge on Diffusion Models, ChatGPT, and Other LLMs (Akshay Kulkarni, Adarsha Shivananda etc.) (Z-Library).pdf'
+'Image sequence for NERF AND Gaussian splatting'/
+ Miniconda3-latest-Windows-x86_64.exe*
+ OpenUSD_Lab-Assets.zip
+ SuGaR-main.zip
+ SumatraPDF-3.5.2-64
+ Supir+Basic+Workflow.json
+'Telegram Desktop'/
+ aifiesta-download-1757694657160.webp
+ aifiesta-download-1757694657400.webp
+ blender_manual_epub.zip
+ desktop.ini
+ ePAN/
+'ebook ai postproc'/
+ gaussian-splat-of-shu.zip
+ gaussian-splatting-blender-addon-master.zip
+ myfirst1.html
+ old4/
+ ply/
+ python-3.11.8-amd64.exe*
+ source/
+ upbge-0.44-windows-x86_64.7z
+ vs_BuildTools.exe*
+ wood-spirit-gaussian-splat.zip
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads
+$ cd ply
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ ls
+Landslide_Puebla_MX_PC.ply  source/
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ scp -r Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+The authenticity of host '148.135.185.26 (148.135.185.26)' can't be established.
+ED25519 key fingerprint is SHA256:suYO01IjCAa/leS3YH1JHtnyUd+TcYf/6LB4a/GLtuQ.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '148.135.185.26' (ED25519) to the list of known hosts.
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ cd
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ cd .ssh
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ ls
+id_rsa  id_rsa.pub  known_hosts  known_hosts.old
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ ^C
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ scp -i ~/.ssh/id_rsa.pub Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+scp: stat local "Landslide_Puebla_MX_PC.ply": No such file or directory
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ cd ~/Downloads/ply
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ scp -i ~/.ssh/id_rsa.pub Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ scp -i ~/.ssh/id_rsa.pub -o IdentitiesOnly=yes -vvv Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+Executing: program /usr/bin/ssh host 148.135.185.26, user root, command sftp
+OpenSSH_9.6p1, OpenSSL 3.2.1 30 Jan 2024
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug2: resolve_canonicalize: hostname 148.135.185.26 is address
+debug3: expanded UserKnownHostsFile '~/.ssh/known_hosts' -> '/c/Users/neula/.ssh/known_hosts'
+debug3: expanded UserKnownHostsFile '~/.ssh/known_hosts2' -> '/c/Users/neula/.ssh/known_hosts2'
+debug3: channel_clear_timeouts: clearing
+debug3: ssh_connect_direct: entering
+debug1: Connecting to 148.135.185.26 [148.135.185.26] port 22.
+debug3: set_sock_tos: set socket 4 IP_TOS 0x48
+debug1: Connection established.
+debug1: identity file /c/Users/neula/.ssh/id_rsa.pub type 0
+debug1: identity file /c/Users/neula/.ssh/id_rsa.pub-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.6
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.9p1 Ubuntu-3ubuntu0.13
+debug1: compat_banner: match: OpenSSH_8.9p1 Ubuntu-3ubuntu0.13 pat OpenSSH* compat 0x04000000
+debug2: fd 4 setting O_NONBLOCK
+debug1: Authenticating to 148.135.185.26:22 as 'root'
+debug3: record_hostkey: found key type ED25519 in file /c/Users/neula/.ssh/known_hosts:4
+debug3: load_hostkeys_file: loaded 1 keys from 148.135.185.26
+debug1: load_hostkeys: fopen /c/Users/neula/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug3: order_hostkeyalgs: have matching best-preference key type ssh-ed25519-cert-v01@openssh.com, using HostkeyAlgorithms verbatim
+debug3: send packet: type 20
+debug1: SSH2_MSG_KEXINIT sent
+debug3: receive packet: type 20
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: sntrup761x25519-sha512@openssh.com,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,ext-info-c,kex-strict-c-v00@openssh.com
+debug2: host key algorithms: ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: none,zlib@openssh.com,zlib
+debug2: compression stoc: none,zlib@openssh.com,zlib
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,sntrup761x25519-sha512@openssh.com,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,kex-strict-s-v00@openssh.com
+debug2: host key algorithms: rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: none,zlib@openssh.com
+debug2: compression stoc: none,zlib@openssh.com
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug3: kex_choose_conf: will use strict KEX ordering
+debug1: kex: algorithm: sntrup761x25519-sha512@openssh.com
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug3: send packet: type 30
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug3: receive packet: type 31
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:suYO01IjCAa/leS3YH1JHtnyUd+TcYf/6LB4a/GLtuQ
+debug3: record_hostkey: found key type ED25519 in file /c/Users/neula/.ssh/known_hosts:4
+debug3: load_hostkeys_file: loaded 1 keys from 148.135.185.26
+debug1: load_hostkeys: fopen /c/Users/neula/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host '148.135.185.26' is known and matches the ED25519 host key.
+debug1: Found key in /c/Users/neula/.ssh/known_hosts:4
+debug3: send packet: type 21
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug2: ssh_set_newkeys: mode 1
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug3: receive packet: type 21
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug2: ssh_set_newkeys: mode 0
+debug1: rekey in after 134217728 blocks
+debug3: send packet: type 5
+debug3: receive packet: type 7
+debug1: SSH2_MSG_EXT_INFO received
+debug3: kex_input_ext_info: extension server-sig-algs
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com>
+debug3: kex_input_ext_info: extension publickey-hostbound@openssh.com
+debug1: kex_ext_info_check_ver: publickey-hostbound@openssh.com=<0>
+debug3: receive packet: type 6
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug3: send packet: type 50
+debug3: receive packet: type 51
+debug1: Authentications that can continue: publickey
+debug3: start over, passed a different list publickey
+debug3: preferred publickey,keyboard-interactive,password
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: keyboard-interactive,password
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Will attempt key: /c/Users/neula/.ssh/id_rsa.pub RSA SHA256:ep1c++tGu9FFtGZBoXuzXsdSQMpxwZB7EDwvltPriUg explicit
+debug2: pubkey_prepare: done
+debug1: Offering public key: /c/Users/neula/.ssh/id_rsa.pub RSA SHA256:ep1c++tGu9FFtGZBoXuzXsdSQMpxwZB7EDwvltPriUg explicit
+debug3: send packet: type 50
+debug2: we sent a publickey packet, wait for reply
+debug3: receive packet: type 51
+debug1: Authentications that can continue: publickey
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ ^C
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ scp -i ~/.ssh/id_rsa.pub -p 7455 -o IdentitiesOnly=yes -vvv Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+scp: stat local "7455": No such file or directory
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ scp -i ~/.ssh/id_rsa -o IdentitiesOnly=yes -vvv Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR          Executing: program /usr/bin/ssh host 148.135.185.26, user root, command sftp
+OpenSSH_9.6p1, OpenSSL 3.2.1 30 Jan 2024
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug2: resolve_canonicalize: hostname 148.135.185.26 is address
+debug3: expanded UserKnownHostsFile '~/.ssh/known_hosts' -> '/c/Users/neula/.ssh/known_hosts'
+debug3: expanded UserKnownHostsFile '~/.ssh/known_hosts2' -> '/c/Users/neula/.ssh/known_hosts2'
+debug3: channel_clear_timeouts: clearing
+debug3: ssh_connect_direct: entering
+debug1: Connecting to 148.135.185.26 [148.135.185.26] port 22.
+debug3: set_sock_tos: set socket 4 IP_TOS 0x48
+debug1: Connection established.
+debug1: identity file /c/Users/neula/.ssh/id_rsa type 0
+debug1: identity file /c/Users/neula/.ssh/id_rsa-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.6
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.9p1 Ubuntu-3ubuntu0.13
+debug1: compat_banner: match: OpenSSH_8.9p1 Ubuntu-3ubuntu0.13 pat OpenSSH* compat 0x04000000
+debug2: fd 4 setting O_NONBLOCK
+debug1: Authenticating to 148.135.185.26:22 as 'root'
+debug3: record_hostkey: found key type ED25519 in file /c/Users/neula/.ssh/known_hosts:4
+debug3: load_hostkeys_file: loaded 1 keys from 148.135.185.26
+debug1: load_hostkeys: fopen /c/Users/neula/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug3: order_hostkeyalgs: have matching best-preference key type ssh-ed25519-cert-v01@openssh.com, using HostkeyAlgorithms verbatim
+debug3: send packet: type 20
+debug1: SSH2_MSG_KEXINIT sent
+debug3: receive packet: type 20
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: sntrup761x25519-sha512@openssh.com,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,ext-info-c,kex-strict-c-v00@openssh.com
+debug2: host key algorithms: ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: none,zlib@openssh.com,zlib
+debug2: compression stoc: none,zlib@openssh.com,zlib
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,sntrup761x25519-sha512@openssh.com,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,kex-strict-s-v00@openssh.com
+debug2: host key algorithms: rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: none,zlib@openssh.com
+debug2: compression stoc: none,zlib@openssh.com
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug3: kex_choose_conf: will use strict KEX ordering
+debug1: kex: algorithm: sntrup761x25519-sha512@openssh.com
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug3: send packet: type 30
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug3: receive packet: type 31
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:suYO01IjCAa/leS3YH1JHtnyUd+TcYf/6LB4a/GLtuQ
+debug3: record_hostkey: found key type ED25519 in file /c/Users/neula/.ssh/known_hosts:4
+debug3: load_hostkeys_file: loaded 1 keys from 148.135.185.26
+debug1: load_hostkeys: fopen /c/Users/neula/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host '148.135.185.26' is known and matches the ED25519 host key.
+debug1: Found key in /c/Users/neula/.ssh/known_hosts:4
+debug3: send packet: type 21
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug2: ssh_set_newkeys: mode 1
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug3: receive packet: type 21
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug2: ssh_set_newkeys: mode 0
+debug1: rekey in after 134217728 blocks
+debug3: send packet: type 5
+debug3: receive packet: type 7
+debug1: SSH2_MSG_EXT_INFO received
+debug3: kex_input_ext_info: extension server-sig-algs
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com>
+debug3: kex_input_ext_info: extension publickey-hostbound@openssh.com
+debug1: kex_ext_info_check_ver: publickey-hostbound@openssh.com=<0>
+debug3: receive packet: type 6
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug3: send packet: type 50
+debug3: receive packet: type 51
+debug1: Authentications that can continue: publickey
+debug3: start over, passed a different list publickey
+debug3: preferred publickey,keyboard-interactive,password
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: keyboard-interactive,password
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Will attempt key: /c/Users/neula/.ssh/id_rsa RSA SHA256:ep1c++tGu9FFtGZBoXuzXsdSQMpxwZB7EDwvltPriUg explicit
+debug2: pubkey_prepare: done
+debug1: Offering public key: /c/Users/neula/.ssh/id_rsa RSA SHA256:ep1c++tGu9FFtGZBoXuzXsdSQMpxwZB7EDwvltPriUg explicit
+debug3: send packet: type 50
+debug2: we sent a publickey packet, wait for reply
+debug3: receive packet: type 51
+debug1: Authentications that can continue: publickey
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ scp -i ~/.ssh/id_rsa Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ ^C
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ scp -i ~/.ssh/id_rsa Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ ls -l ~/.ssh/id_rsa
+-rw-r--r-- 1 neula 197609 3389 Sep 18 23:29 /c/Users/neula/.ssh/id_rsa
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ pwd
+/c/Users/neula/Downloads/ply
+
+neula@LAPTOP-2TILA44T MINGW64 ~/Downloads/ply
+$ cd
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ scp /c/Users/neula/Downloads/ply/Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ scp /c/Users/neula/Downloads/ply/Landslide_Puebla_MX_PC.ply -p 7455 root@148.135.185.26:/root/SuGaR
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ scp /c/Users/neula/Downloads/ply/Landslide_Puebla_MX_PC.ply -p 7455 root@148.135.185.26:/root/SuGaR -L 8080:localhost:8080
+ssh: connect to host 0.0.31.144 port 22: Network is unreachable
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ ssh -p 7455 root@148.135.185.26 -L 8080:localhost:8080
+bind [127.0.0.1]:8080: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 8080
+Could not request local forwarding.
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-59-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Sep 18 19:23:26 UTC 2025
+
+  System load:           0.08
+  Usage of /:            25.4% of 125.81GB
+  Memory usage:          2%
+  Swap usage:            0%
+  Processes:             444
+  Users logged in:       1
+  IPv4 address for ens3: 10.0.2.15
+  IPv6 address for ens3: fec0::5054:ff:fe12:3456
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+17 updates can be applied immediately.
+17 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '24.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Thu Sep 18 18:07:23 2025 from 27.4.52.142
+root@ubuntu:~# ssh keygen
+ssh: Could not resolve hostname keygen: Temporary failure in name resolution
+root@ubuntu:~# ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:cjEbsq1QwTDLbPyZkVBk3Cdk/ebMqHAichspJaXaqU0 root@ubuntu
+The key's randomart image is:
++---[RSA 3072]----+
+|    +*=oo.       |
+|   +.=o+o o      |
+|   o* = +o .     |
+|  o..o B =  o    |
+| o +..* S  *     |
+|. E =.o+. . +    |
+| + + +.+ .       |
+|. . .   .        |
+|                 |
++----[SHA256]-----+
+root@ubuntu:~# ls .ssh
+authorized_keys  id_rsa  id_rsa.pub
+root@ubuntu:~# cat id_rsa.pub
+cat: id_rsa.pub: No such file or directory
+root@ubuntu:~# cd .ssh
+root@ubuntu:~/.ssh# cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC5/dGfIxXOXjaWjEV9z/fowMsPaqhLiK5fGx7IJnLT6qndTWqrXHYECrDSiVPkrQ3Q6q8SWiG958sCceTGCMivfSrWR24VSNd1tRDWpANSd2fU4YBHits5zmp5/bdHXh7vpJlVEbFlfTmuM3wLCYepKb2H5kP8oOUirIGRxeTOViBWfsELC7PodAR/X2WPW3OD2JCsDWU+ryLn8Jd99EKQe3r/+lgBrINF1+TL1s4sVYMIUY4wn6hhFC0ibwpdcC9PjF4TzjV/ZEYH/2MoX2PheaHzRjusa/SfA32FgRB1XT9dze7Opa4vEGz5pI873cOYF2jQ1Zj5F1Uv3PspEygcDD/AsrkAxwcidxbn27tCplVXyc6hzCAQcWhWLXDfmffXllvpDjQQ9sZLAFGQPcWNeqWaDQHtMpG2zfIXbiE6DE6NXS4zu/RsBzhumtmLvu+i+LTk9jEQ5B8b+r1yYbOcl4kNeVbV9uNSyu5NRuX9tKXScPuhxP+B/l9eW7WHCrM= root@ubuntu
+root@ubuntu:~/.ssh#
+logout
+Connection to 148.135.185.26 closed.
+
+neula@LAPTOP-2TILA44T MINGW64 ~
+$ cd .ssh
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ nano authorized_keys
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ nano authorized_keys
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ chmod 600 ~/.ssh/authorized_keys
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ scp /c/Users/neula/Downloads/ply/Landslide_Puebla_MX_PC.ply -p 7455 root@148.135.185.26:/root/SuGaR -L 8080:localhost:8080
+ssh: connect to host 0.0.31.144 port 22: Network is unreachable
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ scp /c/Users/neula/Downloads/ply/Landslide_Puebla_MX_PC.ply -p 7455 root@148.135.185.26:/root/SuGaR
+root@148.135.185.26: Permission denied (publickey).
+scp: Connection closed
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ ssh  root@148.135.185.26 -L 8080:localhost:8080
+root@148.135.185.26: Permission denied (publickey).
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ ssh -i ./id_rsa.pub root@148.135.185.26 -L 8080:localhost:8080
+root@148.135.185.26: Permission denied (publickey).
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ scp -P 7455 /c/Users/neula/Downloads/ply/Landslide_Puebla_MX_PC.ply root@148.135.185.26:/root/SuGaR
+Landslide_Puebla_MX_PC.ply                                                                                    100%   25MB   1.4MB/s   00:17
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$ scp -P 7455 root@148.135.185.26:/root/SuGaR/Landslide_Puebla_MX_PC.obj ~/Downloads/
+Landslide_Puebla_MX_PC.obj                                                                                    100%  265MB   1.9MB/s   02:22
+
+neula@LAPTOP-2TILA44T MINGW64 ~/.ssh
+$
